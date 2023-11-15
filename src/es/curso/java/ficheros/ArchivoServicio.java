@@ -93,7 +93,11 @@ public class ArchivoServicio {
 				if(file.isDirectory()) {
 					System.out.println("Es un directorio");
 				}else {
-					System.out.println("Es un fichero");
+					if(file.getName().endsWith(".jpg")) {
+						System.out.println("Se puede leer: " + file.canRead());
+						System.out.println("Tamaño: " + file.length());
+						System.out.println("Es un fichero");
+					}
 				}
 					
 			}
