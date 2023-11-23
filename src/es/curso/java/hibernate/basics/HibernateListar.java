@@ -12,6 +12,7 @@ import jakarta.persistence.EntityManager;
 public class HibernateListar {
 	
 	private static final Logger logger = LogManager.getLogger(HibernateListar.class);
+	
     public static void main(String[] args) {
     	logger.debug("Empezando");
         EntityManager em = JpaUtil.getEntityManager();

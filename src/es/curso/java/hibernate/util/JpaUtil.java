@@ -15,3 +15,4 @@ public class JpaUtil {
         return entityManagerFactory.createEntityManager();
     }
 }
+
