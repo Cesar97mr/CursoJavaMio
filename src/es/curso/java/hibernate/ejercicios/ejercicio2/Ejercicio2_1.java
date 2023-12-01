@@ -36,10 +36,11 @@ public class Ejercicio2_1 {
 	
 	public void insertarUsuarios(UserDao userDao) {
 		
+		//Creamos los usuarios para la base de datos apartir de su entity
 		UserEntity user1 = new UserEntity("N1", "A1", "1A", new Date());
 		UserEntity user2 = new UserEntity("N2", "A2", "2A", new Date());
 		UserEntity user3 = new UserEntity("N3", "A3", "3A", new Date());
-		
+		//Insertamos los usuarios, en forma de arraylist en un userDao que luego crearemos
 		userDao.insertarUsuarios(Arrays.asList(user1,user2,user3));
 	}
 	
@@ -73,7 +74,6 @@ public class Ejercicio2_1 {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
 		
 	}
 }

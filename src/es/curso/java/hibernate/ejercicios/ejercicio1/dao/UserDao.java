@@ -15,8 +15,9 @@ public class UserDao {
 	private EntityManager em;
 
 	public UserDao() {
-		em = JpaUtil.getEM("hibernateMySQL");
+		em = JpaUtil.getEM("hibernateOracle");
 	}
+	
 	
 	public UserDao(String persitenceUnitName) {
 		em = JpaUtil.getEM(persitenceUnitName);
